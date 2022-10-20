@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;600&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:black;
+    position: relative;
+    height: 100px;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{background-color: black;
+    height: 90px;
+    margin-bottom: 0;
+    grid-area: footer;
+}
+/*header*/
+.logoAdidas img{
+    width: 5%;
+    height: 70px;
+    background-color: rgb(243, 249, 250);
+    border-radius: 300%;
+    position: absolute;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 15px;
+    display: grid;
+}
+.logoAdidas img:hover{
+    transform: scale(1.2,1.2);
+    transition: transform 1s;
+}
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Inter Tight', sans-serif;
+}
+.navBar li{
+    list-style: none;
+    margin-top: 30px;
+    margin-right:60px ;
+}
+.navBar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerIndex{
+    background-image: url(../assets/img/Rectangle3.png);
+    width: 100;
+    height: 440px;
+    overflow: visible;
+}
+.seccion a:hover{
+    color: rgba(102, 129, 189, 0.957);
+}
+.seccion:hover{
+    transform: scale(1.2,1.2);
+    transition: transform 1s;
+}
+/*main*/
+h2 {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.colecciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+/*footer*/
+.redesSociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-right: 30px;
+}
+.redesSociales li a img{
+    margin-top: 20px;
+}
+.redesSociales li {
+    list-style: none;
+}
+.icon{
+    width: 100%;
+    height: 40px;
+}
+/*forms*/
+.formIndumentaria fieldset{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100px;
+    height: 50vh;
+    justify-content: space-evenly;
+    border-style: none;
+    margin-top: 5px;
+    
+}
+
+.formTalles fieldset{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100px;
+    height: 50vh;
+    justify-content: space-evenly;
+    border-style: none;
+}
+
+.formSale fieldset{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100px;
+    height: 50vh;
+    justify-content: space-evenly;
+    border-style: none;
+}
+.formBar {
+    grid-area: forms;
+}
+.filtro {
+    width: 100%;
+    background: rgb(5,131,185);
+    background: linear-gradient(90deg, rgba(5,131,185,1) 0%, rgba(1,92,126,0.5749650201877626) 61%, rgba(30,118,135,1) 100%);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.filtros-2 {
+    margin-left:25px
+}
+/*tienda mujer hombre sale*/
+.tienda{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    margin-top:35px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+.tienda .uno {
+    grid-area: tiendauno;
+    display: flex;
+    width: 100%;
+    grid-column: 2 /3;
+}
+.tienda .dos {
+    grid-area: tiendados;
+    width: 100%;
+    display: flex;
+    grid-column: 2 /3;
+}
+
+.card {
+    display: flex;
+    height: 300px;
+}
+.card:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform 1s;
+}
+/*mi carrito*/
+h3 {
+    font-style: italic;
+}
+h3:hover {
+    transform: translate(10px, 10px);
+    transition: transform 2s;
+}
+.registro {
+    background-color: rgb(242, 187, 195);
+    height: 100px;
+    width: 80%;
+}
+.inputs{
+    display: flex;
+    justify-content: row;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.infoCompra div img p{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+.vacio p{
+    display: flex;
+    font-family: 'Inter Tight', sans-serif;
+}
+.imgbolsa:hover {
+    transform:translateY(5px);
+    transition: transform 2s;
+}
+
+/*grids*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr) 30px;
+    grid-template-areas:
+    "header header header header"
+    "main   main   main   main"
+    "footer footer footer footer";
+}
+.container-tienda {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr) 30px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+}
+.container-main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "forms tiendauno"
+    "forms tiendados";
+}
+
+@media (max-width:768px) {
+    /*index*/
+    .container {
+        width: 768px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 15% 75% 10%;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+    .headerIndex{
+        width: 768px;
+    }
+    main {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .headerIndex {
+        background-image: url(../assets/img/rectangle-tablet.png);
+        height: 200px;
+    }
+    .colecciones {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        row-gap: 10px;
+    }
+    .tres {
+        display: none;
+    }
+    /*mujer hombre sale = sin terminar no supe seguir*/
+    .container-main {
+        width: 768%;
+        display: grid;
+        grid-template-columns: 400px 200px;
+        grid-template-rows: 20% 40% 40%;
+        grid-template-areas:
+        "forms forms"
+        "tiendauno tiendauno"
+        "tiendados tiendados";
+    }
+    .formBar {
+        display: none;
+    }
+    .dos-3 {
+        display: none;
+    }
+    .uno-3 {
+        display: none;
+    }
+    .container-tienda {
+        width: 768%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas:
+        "header header "
+        "main main "
+        "footer footer";
+    }
+}
+
+@media (max-width:576px) {
+    /*index*/
+    .container {
+        width: 576px;
+        display:grid ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 85% 5%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .colecciones {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        row-gap: 40px;
+    }
+    main {
+        margin-top: 70px;
+    }
+    /*mujer hombre sale = sin terminar no supe seguir*/
+    .container-tienda {
+        width: 576%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60% 20%;
+        grid-template-areas:
+        "header "
+        "main "
+        "footer ";
+    }
+}
