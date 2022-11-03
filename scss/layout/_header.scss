@@ -1,0 +1,65 @@
+header{
+    background-color:black;
+    position: relative;
+    height: 100px;
+    grid-area: header;
+}
+.logoAdidas {
+    img{
+        width: 5%;
+        height: 70px;
+        background-color: rgb(243, 249, 250);
+        border-radius: 300%;
+        position: absolute;
+        display: flex;
+        margin-left: 30px;
+        margin-top: 15px;
+        display: grid;
+        &:hover {
+            transform: scale(1.2,1.2);
+            transition: transform 1s;
+        }
+    }
+}
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        gap: 15px;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'Inter Tight', sans-serif;
+        li {
+            list-style: none;
+            margin-top: 30px;
+            margin-right:60px ;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+.navBarMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Inter Tight', sans-serif;
+}
+#menu, #menu-check {
+    display: none;
+}
+.seccion {
+    &:hover {
+        transform: scale(1.2,1.2);
+        transition: transform 1s;
+    }
+    a{
+        &:hover {
+            color: rgba(102, 129, 189, 0.957);
+        }
+    }
+}

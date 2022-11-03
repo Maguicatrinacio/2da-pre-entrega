@@ -1,0 +1,109 @@
+@media (max-width:576px) {
+    /*index*/
+    .container {
+        width: 576px;
+        display:grid ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 85% 5%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .logoAdidas img{
+        width: 9%;
+        height: 50px;
+        background-color: rgb(243, 249, 250);
+        border-radius: 100%;
+        position: absolute;
+        display: flex;
+        margin-left: 30px;
+        margin-top: 15px;
+        display: grid;
+    }
+    .headerIndex {
+        background-image: url(../assets/img/rectangle-mobile.png);
+        width: 576px;
+        height: 100px;
+    }
+    #menu-check:not(:checked) ~ .navBar  {
+        display: none;
+        a {
+            display: none;
+        }
+    }
+    #menu {
+        display: flex;
+        color: rgb(7, 7, 7);
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    #menu-cerrar {
+        display: none;
+    }
+    #menu-check:checked {
+        nav {
+            display: flex;
+        }
+        label #menu-abrir {
+            display: none;
+        }
+        label #menu-cerrar {
+            display: flex;
+        }
+    }
+    .navBar  {
+        display: flex;
+        width: 25%;
+        margin-right: 0;
+        background-color: rgb(228, 226, 224);
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+        gap:0 ;
+        li a {
+            color: rgb(145, 85, 85);
+            font-size: 18px;
+            gap: 1px;
+            margin-top: 0;
+            margin-right: 0;
+            margin-left: 2px;
+            display: flex;
+        }
+    }
+    .navBarMenu {
+        display: flex;
+        align-items: flex-end ;
+        flex-direction: column;
+        margin-right: 20px;
+        
+    }
+    .colecciones {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+        row-gap: 40px;
+    }
+    .uno img {
+        width: 280px;
+        height: 280px;
+    }
+    .dos img {
+        width: 280px;
+        height: 280px;
+    }
+    main {
+        margin-top: 60px;
+    }
+    /*mujer hombre sale = sin terminar no supe seguir*/
+    .container-tienda {
+        width: 576%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60% 20%;
+        grid-template-areas:
+        "header "
+        "main "
+        "footer ";
+    }
+}

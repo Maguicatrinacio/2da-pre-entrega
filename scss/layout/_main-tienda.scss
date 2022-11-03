@@ -1,0 +1,77 @@
+.form fieldset{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100px;
+    height: 50vh;
+    justify-content: space-evenly;
+    border-style: none;
+    margin-top: 5px;
+    
+}
+.formBar {
+    grid-area: forms;
+}
+.filtro {
+    width: 100%;
+    background: rgb(5,131,185);
+    background: linear-gradient(90deg, rgb(175, 36, 36) 0%, rgba(250, 62, 84, 0.575) 61%, rgb(231, 132, 132) 100%);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.filtros-2 {
+    margin-left:25px
+}
+.tienda{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    margin-top:35px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    
+}
+.tienda .uno {
+    grid-area: tiendauno;
+    display: flex;
+    width: 100%;
+    grid-column: 2 /3;
+}
+.tienda .dos {
+    grid-area: tiendados;
+    width: 100%;
+    display: flex;
+    grid-column: 2 /3;
+}
+.card {
+    display: flex;
+    height: 300px;
+    &:hover{
+        transform: scale(1.2, 1.2);
+        transition: transform 1s;
+    }
+}
+.container-main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "forms tiendauno"
+    "forms tiendados";
+}
+.container-tienda {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr) 30px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+}

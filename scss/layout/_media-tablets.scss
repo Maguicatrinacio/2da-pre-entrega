@@ -1,0 +1,135 @@
+@media (max-width:768px) {
+    /*index*/
+    .container {
+        width: 768px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 15% 75% 10%;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+    .logoAdidas img{
+        width: 8%;
+        height: 60px;
+        background-color: rgb(243, 249, 250);
+        border-radius: 100%;
+        position: absolute;
+        display: flex;
+        margin-left: 30px;
+        margin-top: 15px;
+        display: grid;
+    }
+    main {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .headerIndex {
+        background-image: url(../assets/img/rectangle-tablet.png);
+        height: 200px;
+        width: 768px;
+    }
+    #menu-check:not(:checked) ~ .navBar  {
+        display: none;
+        a {
+            display: none;
+        }
+    }
+    #menu-check:checked {
+    nav {
+        display: flex;
+    }
+    label #menu-abrir {
+        display: none;
+    }
+    label #menu-cerrar {
+        display: flex;
+    }
+}
+    #menu {
+        display: flex;
+        color: white;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    #menu-cerrar {
+        display: none;
+    }
+    .navBar  {
+        display: flex;
+        width: 20%;
+        margin-right: 0;
+        background-color: rgb(228, 226, 224);
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+        gap:0 ;
+        li a {
+            color: rgb(145, 85, 85);
+            font-size: 20px;
+            gap: 1px;
+            margin-top: 0;
+            margin-right: 0;
+            margin-left: 2px;
+            display: flex;
+        }
+    }
+    .navBarMenu {
+        display: flex;
+        align-items: flex-end ;
+        flex-direction: column;
+        margin-right: 30px;
+        
+    }
+    .colecciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30%;
+        row-gap: 10px;
+    }
+    .uno img{
+        width: 300px;
+        height: 300px;
+    }
+    .dos img {
+        width: 300px;
+        height: 300px;
+    }
+    .tres {
+        display: none;
+    }
+/*mujer hombre sale*/
+    .container-tienda {
+        width: 768%;
+        display: grid;
+        grid-template-columns:100px repeat(2, 1fr);
+        grid-template-rows: 10% 80% 10%;
+        grid-template-areas:
+        "header header header "
+        "main main main "
+        "footer footer footer";
+    }
+    .container-main {
+        width: 768%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 1fr;
+        grid-template-areas:
+        "forms forms"
+        "tiendauno tiendauno"
+        "tiendados tiendados";
+    }
+    .formBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .dos-3 {
+        display: none;
+    }
+    .uno-3 {
+        display: none;
+    }
+}

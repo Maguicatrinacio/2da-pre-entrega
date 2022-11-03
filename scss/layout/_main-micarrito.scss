@@ -1,0 +1,38 @@
+h3 {
+    font-style: italic;
+    &:hover {
+        transform: translate(10px, 10px);
+        transition: transform 2s;
+    }
+}
+.registro {
+    background-color: rgb(242, 187, 195);
+    height: 100px;
+    width: 80%;
+}
+.inputs{
+    display: flex;
+    justify-content: row;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.infoCompra
+    div{
+        img{
+            p{
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-end;
+            }
+        }
+    } 
+.vacio p{
+        display: flex;
+        font-family: 'Inter Tight', sans-serif;
+}
+.imgbolsa{
+    &:hover {
+    transform:translateY(5px);
+    transition: transform 2s;
+    }
+}
