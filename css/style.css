@@ -208,98 +208,81 @@ h2 {
   .headerIndex {
     background-image: url("../assets/img/rectangle-tablet.png");
     height: 200px;
-    width: 100%; } }
-
-#menu-check:not(:checked) ~ .navBar {
-  display: none; }
-  #menu-check:not(:checked) ~ .navBar a {
+    width: 100%; }
+  #menu-check:not(:checked) ~ .navBar {
     display: none; }
-
-#menu-check:checked nav {
-  display: flex; }
-
-#menu-check:checked label #menu-abrir {
-  display: none; }
-
-#menu-check:checked label #menu-cerrar {
-  display: flex; }
-
-#menu {
-  display: flex;
-  color: white;
-  font-size: 1.2em;
-  margin-top: 10px; }
-
-#menu-cerrar {
-  display: none; }
-
-.navBar {
-  display: flex;
-  width: 20%;
-  margin-right: 0;
-  background-color: #e4e2e0;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: 0;
-  gap: 0; }
-  .navBar li a {
-    color: #915555;
-    font-size: 20px;
-    gap: 1px;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 2px;
+    #menu-check:not(:checked) ~ .navBar a {
+      display: none; }
+  #menu-check:checked nav {
     display: flex; }
-
-.navBarMenu {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  margin-right: 30px; }
-
-.colecciones {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 30%;
-  row-gap: 10px; }
-
-.uno img {
-  width: 300px;
-  height: 300px; }
-
-.dos img {
-  width: 300px;
-  height: 300px; }
-
-.tres {
-  display: none; }
-
-/*mujer hombre sale*/
-.container-tienda {
-  width: 768%;
-  display: grid;
-  grid-template-columns: 100px repeat(2, 1fr);
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas: "header header header " "main main main " "footer footer footer"; }
-
-.container-main {
-  width: 768%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100px 1fr;
-  grid-template-areas: "forms forms" "tiendauno tiendauno" "tiendados tiendados"; }
-
-.formBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.dos-3 {
-  display: none; }
-
-.uno-3 {
-  display: none; }
+  #menu-check:checked label #menu-abrir {
+    display: none; }
+  #menu-check:checked label #menu-cerrar {
+    display: flex; }
+  #menu {
+    display: flex;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 10px; }
+  #menu-cerrar {
+    display: none; }
+  .navBar {
+    display: flex;
+    width: 20%;
+    margin-right: 0;
+    background-color: #e4e2e0;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 0;
+    gap: 0; }
+    .navBar li a {
+      color: #915555;
+      font-size: 20px;
+      gap: 1px;
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: 2px;
+      display: flex; }
+  .navBarMenu {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 30px; }
+  .colecciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30%;
+    row-gap: 10px; }
+  .uno img {
+    width: 300px;
+    height: 300px; }
+  .dos img {
+    width: 300px;
+    height: 300px; }
+  .tres {
+    display: none; }
+  /*mujer hombre sale*/
+  .container-tienda {
+    width: 768%;
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr);
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "header header header " "main main main " "footer footer footer"; }
+  .container-main {
+    width: 768%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "forms forms" "tiendauno tiendauno" "tiendados tiendados"; }
+  .formBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .dos-3 {
+    display: none; }
+  .uno-3 {
+    display: none; } }
 
 .headerIndex {
   background-image: url("../assets/img/rectangle3.png");
