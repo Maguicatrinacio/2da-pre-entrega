@@ -1,7 +1,7 @@
 @media (max-width:768px) {
     /*index*/
     .container {
-        width: 768px;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 15% 75% 10%;
@@ -58,7 +58,7 @@
     }
     .navBar  {
         display: flex;
-        width: 20%;
+        width: 100%;
         margin-right: 0;
         background-color: rgb(228, 226, 224);
         flex-direction: column;
@@ -102,9 +102,9 @@
     }
 /*mujer hombre sale*/
     .container-tienda {
-        width: 768%;
+        width: 100%;
         display: grid;
-        grid-template-columns:100px repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 10% 80% 10%;
         grid-template-areas:
         "header header header "
@@ -112,7 +112,7 @@
         "footer footer footer";
     }
     .container-main {
-        width: 768%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 100px 1fr;

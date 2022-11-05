@@ -1,7 +1,7 @@
 @media (max-width:576px) {
     /*index*/
     .container {
-        width: 576px;
+        width: 100%;
         display:grid ;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 85% 5%;
@@ -54,7 +54,7 @@
     }
     .navBar  {
         display: flex;
-        width: 25%;
+        width: 100%;
         margin-right: 0;
         background-color: rgb(228, 226, 224);
         flex-direction: column;
@@ -97,7 +97,7 @@
     }
     /*mujer hombre sale = sin terminar no supe seguir*/
     .container-tienda {
-        
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 40% 60% 20%;
