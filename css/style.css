@@ -122,7 +122,7 @@ h2 {
     margin-top: 15px;
     display: grid; }
   .headerIndex {
-    background-image: url(../assets/img/rectangle-mobile.png);
+    background-image: url(../assets/img/rectangle3.png);
     width: 576px;
     height: 100px; }
   #menu-check:not(:checked) ~ .navBar {
@@ -179,7 +179,6 @@ h2 {
     margin-top: 60px; }
   /*mujer hombre sale = sin terminar no supe seguir*/
   .container-tienda {
-    width: 576%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 60% 20%;
@@ -208,8 +207,7 @@ h2 {
     margin-bottom: 10px; }
   .headerIndex {
     background-image: url(../assets/img/rectangle-tablet.png);
-    height: 200px;
-    width: 768px; }
+    height: 200px; }
   #menu-check:not(:checked) ~ .navBar {
     display: none; }
     #menu-check:not(:checked) ~ .navBar a {

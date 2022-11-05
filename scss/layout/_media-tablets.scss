@@ -28,7 +28,7 @@
     .headerIndex {
         background-image: url(../assets/img/rectangle-tablet.png);
         height: 200px;
-        width: 768px;
+        width: 100%;}
     }
     #menu-check:not(:checked) ~ .navBar  {
         display: none;
