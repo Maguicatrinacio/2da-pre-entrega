@@ -1,38 +1,72 @@
 h3 {
+    color: rgb(5, 208, 208);
     font-style: italic;
+    margin-left: 10px;
     &:hover {
         transform: translate(10px, 10px);
         transition: transform 2s;
     }
 }
 .registro {
-    background-color: rgb(242, 187, 195);
-    height: 100px;
-    width: 80%;
+    background-color: rgb(185, 52, 52);
+    height: 120px;
+    width: 50%;
+    grid-area: registro;
+    display: flex;
+    margin-left: 49%;
+    margin-bottom: 20px;
 }
+
 .inputs{
+    width: 100%;
+    height: 30px;
     display: flex;
     justify-content: row;
-    margin-left: 10px;
+    gap: 20px;
+    margin-left: 30px;
     margin-top: 10px;
+    border-style: none;
 }
-.infoCompra
-    div{
-        img{
-            p{
-                display: flex;
-                flex-direction: column;
-                justify-content:flex-end;
-            }
-        }
-    } 
-.vacio p{
+
+section {
+    .carrito {
+        display: flex;
+        grid-area: carrito;
+    }
+}
+aside {
+    .mapa{
+        display: flex;
+        grid-area: mapa;
+    }
+}
+div {
+    .miCarrito{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+}
+h1{
         display: flex;
         font-family: 'Inter Tight', sans-serif;
+        justify-content: center;
+        font-weight: lighter;
 }
 .imgbolsa{
     &:hover {
     transform:translateY(5px);
     transition: transform 2s;
     }
+}
+.container-carrito {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr) 30px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
 }
