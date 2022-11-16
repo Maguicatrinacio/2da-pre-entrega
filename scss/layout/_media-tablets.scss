@@ -11,7 +11,8 @@
         "footer footer footer";
     }
     header {
-        height: 150px;
+        height: 120px;
+        grid-area: header;
     }
     .logoAdidas img{
         width: 8%;
@@ -101,12 +102,79 @@
         height: 300px;
     }
     .tres {
-        display: none;
+        width: 300px;
+        height: 300px;
+    }
+    footer {
+        height: 100px;
+        grid-area: footer;
+        margin-top: 70px;
+            ul {
+                li {
+                    .icon{
+                        width: 34px;
+                        height: 32px;
+                        margin-top: 30px;
+                        }
+                }
+            }
     }
 /*mujer hombre sale*/
 .tienda {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    margin-left: 75px;
+}
+div {
+    .card{ 
+        img {
+        width: 230px;
+        height: 230px;
+        gap: 10px;
+        }
+    }
+}
+.tienda .uno {
+    grid-area: tiendauno;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.tienda .dos {
+    grid-area: tiendados;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formBar {
+    grid-area: forms;
+}
+.filtro {
+    font-size: 17px;
+    background: cadetblue;
+}
+.filtros-2 {
+    font-size: 14px;
+}
+.container-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px repeat(2, 1fr);
+    grid-template-areas:
+    "forms tiendauno tiendados";
+}
+
+.container-tienda {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:11% 88% 1%;
+    grid-template-areas:
+    "header "
+    "main "
+    "footer";
 }
 
 /*micarrito*/
@@ -117,8 +185,8 @@
 .mapa {
     div {
         iframe {
-            width: 360px;
-            height: 350px;
+            width: 330px;
+            height: 320px;
             
         }
     }
@@ -135,10 +203,9 @@
 }
 .container-carrito {
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 15% 77% 8%;
+    grid-template-rows: 15% 80% 5%;
     grid-template-areas:
     "header header "
     "main main "

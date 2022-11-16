@@ -12,6 +12,7 @@
     }
     header {
         height: 80px;
+        grid-area: header;
     }
     .logoAdidas img{
         width: 9%;
@@ -79,7 +80,7 @@
     .colecciones {
         display: flex;
         flex-direction: column;
-        margin-left: 25%;
+        margin-left: 28%;
         row-gap: 40px;
     }
     .uno img {
@@ -92,9 +93,19 @@
     }
     main {
         margin-top: 60px;
+        grid-area: main;
     }
     footer {
         height: 80px;
+        grid-area: footer;
+            ul {
+                li {
+                    .icon{
+                        width: 30px;
+                        height: 28px;
+                        }
+                }
+            }
     }
     /*mujer hombre sale*/
     /*
@@ -115,16 +126,20 @@
 
     /*micarrito*/
     .imgbolsa {
-        width: 150px;
-        height: 150px;
+        width: 350px;
+        height: 350px;
         display: flex;
+        flex-direction: column;
+        margin-left: 120px;
     }
     .mapa {
         div {
             iframe {
-                width: 150px;
-                height: 150px;
+                width: 350px;
+                height: 350px;
                 display: flex;
+                flex-direction: column;
+                margin-left: 120px;
             }
         }
     }
@@ -136,15 +151,21 @@
     .inputs {
         margin-left: 2px;
     }
+    div{
+        .miCarrito {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+
     .container-carrito {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 35% 35% 20%;
+        grid-template-rows: 10% 85% 5%;
         grid-template-areas:
         "header"
         "main "
-        "main"
         "footer";
     }
     
