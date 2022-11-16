@@ -37,8 +37,8 @@
     }
     #menu {
         display: flex;
-        color: rgb(7, 7, 7);
-        font-size: 1.2em;
+        color: rgb(253, 251, 251);
+        font-size: 0.9em;
         margin-top: 10px;
     }
     #menu-cerrar {
@@ -57,20 +57,14 @@
     }
     .navBar  {
         display: flex;
-        width: 100%;
-        margin-right: 0;
-        /*
-        background-color: rgb(228, 226, 224); */
+        width: auto;
+        background-color: rgb(228, 226, 224); 
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 0;
-        gap:0 ;
         li a {
             color: rgb(145, 85, 85);
-            font-size: 18px;
-            gap: 1px;
-            margin-top: 0;
-            margin-right: 0;
+            font-size: 14px;
+            gap:inherit;
             margin-left: 2px;
             display: flex;
         }
@@ -102,7 +96,8 @@
     footer {
         height: 80px;
     }
-    /*mujer hombre sale = sin terminar no supe seguir*/
+    /*mujer hombre sale*/
+    /*
     .container-tienda {
         width: 100%;
         display: grid;
@@ -112,7 +107,12 @@
         "header "
         "main "
         "footer ";
+    } */
+    .tienda {
+        display: flex;
+        flex-direction: column;
     }
+
     /*micarrito*/
     .imgbolsa {
         width: 150px;
