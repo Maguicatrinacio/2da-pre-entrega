@@ -308,7 +308,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 30%;
+    margin-left: 35%;
     row-gap: 10px; }
   .uno img {
     width: 300px;
@@ -478,12 +478,15 @@ footer {
   .tienda {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    margin-left: 93px; }
+    gap: 10px;
+    margin-left: 18px; }
   div .card img {
-    width: 300px;
-    height: 290px;
-    gap: 10px; }
+    width: 230px;
+    height: 220px;
+    gap: 2px; }
+  div .card:hover {
+    transform: scale(1.1, 1.05);
+    transition: transform 1s; }
   .tienda .uno {
     grid-area: tiendauno;
     width: 100%;
@@ -495,13 +498,13 @@ footer {
     display: flex;
     flex-direction: column; }
   .formBar {
-    grid-area: forms; }
+    display: none; }
   .container-main {
     width: 100%;
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "forms tiendauno" "forms tiendados"; }
+    grid-template-areas: "tiendauno tiendados" "tiendauno tiendados"; }
   /*micarrito*/
   .imgbolsa {
     width: 350px;
